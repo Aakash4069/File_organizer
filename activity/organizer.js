@@ -22,7 +22,7 @@ function sendFile(dest,category,src){
     console.log(category);
     let categorypath=path.join(dest,category);
 
-    if(fs.existsSync(categorypath)==false){             // fs.exitsSync() method is used to synchronosly check if a file already exit in the given path or not .it return the boolean value which indicate the presence of of file.
+    if(fs.existsSync(categorypath)==false){   // does category exit          // fs.exitsSync() method is used to synchronosly check if a file already exit in the given path or not .it return the boolean value which indicate the presence of of file.
         fs.mkdirSync(categorypath);
     }       
     let fName=path.basename(src);
@@ -34,8 +34,11 @@ function getCategory(ext){
     let types=utility.types;
     for(let category in types){
         for(let i=0;i<types[category].length;i++){
-            console.log("Inside get category"+category);
-            return category;
+            if(ext==types[category][i]){
+
+                console.log("Inside get category"+category);
+                return category;
+            }
         }
     }
     return "others";
@@ -64,7 +67,7 @@ function organizer(src,dest){
     }
 }
 
-let src=process.argv[2];
+let src=process.argv[2]|| process.cwd();
 let dest=path.join(src,"organized_file");
 if(fs.existsSync(dest)==false){
     fs.mkdirSync(dest);
