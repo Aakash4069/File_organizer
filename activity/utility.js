@@ -10,7 +10,7 @@ module.exports.types={
     System:[".bak",".cab",".cfg",".cpl"," .cur",".dll",".dmp",".drv",".icns",".ico",".ini",".lnk",".msi",".sys"," .tmp"],
     Video:[".3g2",".3gp",".avi",".flv"," .h264",".m4v"," .mkv",".mov",".mp4",".mpg",".mpeg",".rm",".swf",".vob"," .wmv" ],
     Documents:[".doc",".docx",".odt",".pdf",".rtf",".tex",".txt",".wpd",".ods",".xls",".xlsm",".xlsx" ],
-    Webbase:[".asp",".aspx",".cer",".cfm",".cgi",".pl",".css",".htm",".html",".js",".jsp",".part",".php",".rss",".xhtml"]
+    Webbase:[".asp",".aspx",".cer",".cfm",".cgi",".pl",".css",".htm",".html",".js",".jsp",".part",".php",".rss",".xhtml "]
     
 
 }
