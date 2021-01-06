@@ -68,7 +68,7 @@ function organizer(src,dest){
 }
 
 let src=process.argv[2]|| process.cwd();
-let dest=path.join(src,"organized_file");
+let dest=path.join(src,"organized_files");
 if(fs.existsSync(dest)==false){
     fs.mkdirSync(dest);
 }
