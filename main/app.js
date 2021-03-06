@@ -1,5 +1,6 @@
 const electron =require("electron");
 const app=electron.app;
+const organizefn=require("./organizer");
 // const ejs=require("ejs-electron");
 
 function createWindow(){

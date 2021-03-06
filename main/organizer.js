@@ -90,6 +90,9 @@ function organizefn(src){
 
 }
 
+let src=process.argv[2]|| process.cwd();   // this will be uncomment when i will run from the organizer.js file only by command node organizer.js
+organizefn(src);
+
 module.exports ={
     fn: organizefn
 }

@@ -2,8 +2,7 @@
   "name": "file_organizer",
   "version": "1.0.0",
   "description": "File_Organizer",
-  "main": "./activity/app.js",
-  "main": "./activity/app.js",
+  "main": "organizer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
@@ -20,5 +19,8 @@
   "homepage": "https://github.com/Aakash4069/File_organizer#readme",
   "devDependencies": {
     "electron": "^11.2.0"
+  },
+  "bin": {
+    "organizer": "organizer.js"
   }
 }
