@@ -2,35 +2,6 @@
 This will organise files on the basis of there extension
 
 
-
-
-# File System organizer
-We will build a global cli utility that will support following commands
-* mycli help
-* mycli view <dirname> --tree 
-* mycli view <dirname> --flat
-* mycli organize <dirname>
-* mycli organize 
-
-## Facts
-*  Left to right & top to bottom , dynamic vs static typed
-*  primitives-> undefined,string,number,boolean, null 
-*  JS and Java similarity
-*  simple isprime Question
-*   functions,-> no return,param type 
-*   objects -> property,methods, may be oops,.,square, loops ,memory map
-*   Questions: record collection, profile lookup
-*   Arrays are optional -> usko bhi padha denge 
-## Activity
-* Skeleton code
-* Write help command
-* Convert it into multiple files-> require and module.exports
-* display gtree code
-* print flat and tree
-* organize
-* npm link and make it global
-
-
 ## install dependency.
 * npm install node
 * npm init
@@ -38,25 +9,31 @@ We will build a global cli utility that will support following commands
 * Run from the belew commands 
 
 
-### commands to run the file when it not globle 
-  ## When you run from organize.js file
+## commands to run the file when it not globle 
+  ### When you run from organize.js file
   
- organizeFile(process.argv[2]) This line need to comment before you run from below command. This line take input when we run organize file only, command for run organized file: node oragnize.js " This line need to comment before you run from below command ome/akky/Dev_T/2_File_System_10_02_2021"
-  ## When you run from mycli.js file
-  
-// node mycli.js organize "/home/akky/Dev_T/2_File_System_10_02_2021"
+ When run from organizer file then this line "let src=process.argv[2]|| process.cwd();" must be uncomment.
+    ### commands to run file 
+      1> When you not give any directory path for organized.
+            node organizer.js             // it will take the current folder path from which file run
+      2> When you give any directory path for organized.
+             node organizer.js " path of the folder which need to organized"
+             
+  ## When you run from app.js file
+
+  In this only electron application created and only path of the folder to give to run
 
 
 
-
-## To make Script globle.follow the below step to make it global. it will pass through make mycli.js
+## In this through terminal or cmd we can organized any folder.
+### To make Script globle.follow the below step to make it global. it will pass through make organizer.js
 
  * step to make it globall
  * step 1: npm init
  * step 2: add this line to myclis.js   #!/user/bin/env node
  * step 3: add this below line to package.json  at the last 
  *           "bin":{
-                   "myutil": "mycli.js"
+                   "organizer": "organizer.js"
                      }
  * step 4 : add this line to organized folder
          function organizefn(src){              
