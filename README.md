@@ -9,8 +9,9 @@ This will organise files on the basis of there extension
 * Run from the belew commands 
 
 
-## commands to run the file when it not globle 
-  ### When you run from organize.js file
+## commands to run the file when it not globle.
+
+  ### When you run from organize.js file.
   
  When run from organizer file then this line "let src=process.argv[2]|| process.cwd();" must be uncomment.
     ### commands to run file 
@@ -19,13 +20,14 @@ This will organise files on the basis of there extension
       2> When you give any directory path for organized.
              node organizer.js " path of the folder which need to organized"
              
-  ## When you run from app.js file
+  ### When you run from app.js file.
 
   In this only electron application created and only path of the folder to give to run
 
 
 
 ## In this through terminal or cmd we can organized any folder.
+
 ### To make Script globle.follow the below step to make it global. it will pass through make organizer.js
 
  * step to make it globall
