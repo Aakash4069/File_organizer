@@ -1,4 +1,4 @@
-# File_organizer
+# File_organier
 This will organise files on the basis of there extension
 
 
