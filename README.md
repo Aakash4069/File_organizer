@@ -1,10 +1,10 @@
 # File_organiser
-This will organise files on the basis of there extension
+This will organise files on the basis of File Extension
 
 
 ## install dependency.
-* npm install node
 * npm init
+* npm install
 * Flow the file Sturcture as shown above 
 * Run from the belew commands 
 
